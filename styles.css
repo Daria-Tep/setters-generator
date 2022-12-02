@@ -1,14 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(90deg,#8b3088,#693a90,#414191); 
+  background: linear-gradient(90deg,#8b3088,#693a90,#414191); 
+  padding-bottom: 50px;
+}
+
+textarea {
+  margin: 0;
+  padding: 0;
+  resize: none;
+  box-sizing: border-box;
+}
+
 main {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+header {
+  max-width: 100%;
+  display: flex;
+  padding: 5px 15px;
+  background: -webkit-linear-gradient(90deg,rgba(139, 48, 136, 0.114),#00000041);
+}
+
 h1 {
-  margin: 0 auto;
-  font-family:'Times New Roman', Times, serif;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+h2 {
+  font-family: sans-serif;
   font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 0;
+  margin-bottom: 50px;
 }
 
 button {
@@ -19,41 +67,100 @@ button {
   height: 56px;
   border-radius: 45px;
   font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
   color: #fff;
+  transition: .3s;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 button:hover {
   opacity: .8;
 }
 
-.btnWrapper {
-  margin-top: 20px;
+.generatorSection {
+  position: relative;
+  max-width: 1230px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, .6);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding:  20px;
+  margin-top: 48px;
 }
 
-.textarea {
+/* setters generator */
+
+.settersGenerator__leftSection {
+  position: relative;
+  width: 35%;
+}
+
+.settersExample {
+ width: 100%;
+ font-family:  sans-serif;
+ letter-spacing: 1px;
+ background-color: #ffffff8e;
+ border-radius: 10px;
+ padding: 10px;
+}
+
+.settersGenerator__rightSection {
+  position: relative;
+  width: 35%;
+  height: 430px;
+}
+
+.settersTextarea {
   border-radius: 15px;
-  width: 500px;
-  height: 200px;
+  width: 100%;
+  height: 250px;
   resize: none;
   margin-top: 30px;
+  outline: #414191;
+  background-color: #ffffff8e;
+  padding: 10px;
 }
 
 .textareaResult {
+  position: relative;
   border-radius: 15px;
-  width: 500px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   resize: none;
+  outline: #414191;
+  background-color: #ffffff8e;
+  padding: 10px;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  gap: 15px;
+  align-self: center;
 }
 
 
 .btnResult {
-  background-color: rgb(94, 158, 49);
+  background: linear-gradient(90deg,#ef5da1,#ee4343); 
+
 }
 
 .btnClear {
-  background-color: brown;
+  background-color: transparent;
+  border: 2px solid #414191b5;
+  color: #343487d1;
+  background-color: #ffffff30;
 }
 
 .btnCopy {
-  background-color: rgb(214, 195, 68);
+  color: rgba(34, 34, 34, 0.9);
+  background-color: #edde09b5;
 }
