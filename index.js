@@ -1,4 +1,4 @@
-const textarea = document.querySelector(".textarea");
+const settersTextarea = document.querySelector(".settersTextarea");
 const btnResult = document.querySelector(".btnResult");
 const btnClear = document.querySelector(".btnClear");
 const btnCopy = document.querySelector(".btnCopy");
@@ -64,7 +64,7 @@ class Main {
 let main = new Main();
 
 btnResult.addEventListener("click", () => {
-  main.setValue(textarea.value);
+  main.setValue(settersTextarea.value);
   textareaResult.value = "";
 
   if (main.inputValue) {
@@ -75,7 +75,7 @@ btnResult.addEventListener("click", () => {
 });
 
 btnClear.addEventListener("click", () => {
-  textarea.value = "";
+  settersTextarea.value = "";
   textareaResult.value = "";
 });
 

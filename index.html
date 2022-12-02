@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Generators</h1>
+    </header>
     <main>
-<h1>Генератор сеттеров</h1>
-<textarea  class="textarea" ></textarea>
+      <section class="generatorSection settersGenerator">
+        <div class="settersGenerator__leftSection">
+          <h2>Генератор сеттеров</h2>
+          <pre class="settersExample">
+isLoading: boolean = false -> 
 
-<div class="btnWrapper">
-    <button class="btnResult">Сгенерировать</button>
-    <button class="btnClear">Очистить</button>
-    <button class="btnCopy">Скопировать</button>
-    
-</div>
+                setIsLoading(value: boolean) {
+                    this.isLoading = value;
+                }
+          </pre>
+          <textarea
+            class="settersTextarea"
+            placeholder="Введите текст..."
+          ></textarea>
+        </div>
 
-<h2>Результат!</h2>
-<textarea  class="textareaResult" readonly="true" ></textarea>
+        <div class="btnWrapper">
+          <button class="btnResult">Сгенерировать</button>
+          <button class="btnClear">Очистить</button>
+          <button class="btnCopy">Скопировать</button>
+        </div>
 
-   
-    <script src="index.js" ></script>
-</main>
-</body>
+        <div class="settersGenerator__rightSection">
+          <h2>Результат:</h2>
+          <textarea class="textareaResult" readonly="true"></textarea>
+        </div>
+      </section>
+
+      <script src="index.js"></script>
+    </main>
+  </body>
 </html>
